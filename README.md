@@ -9,6 +9,8 @@
                                                                                          |_|                              
 ```
 
+run it in one command **IF** you already have a service called *avalanchenode*: ```wget -qO - https://raw.githubusercontent.com/qsvtr/avalanche-node-updater/master/updateAvalancheNode.sh | bash```
+
 # Configuration:
   * create a system file **ONLY IF** you didn't get one
     + ```sudo cp .avalanchenode.service.example /etc/systemd/system/avalanchenode.service```
