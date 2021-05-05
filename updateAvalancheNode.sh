@@ -37,7 +37,7 @@ fi
 echo -ne "updating Github repo....."
 if cd $GOPATH/src/github.com/ava-labs/avalanchego > /dev/null 2>&1
 then
-	if git pull > /dev/null 2>&1
+	if git reset --hard > /dev/null 2>&1 && git pull > /dev/null 2>&1
         then
                 echo -ne "${GREEN}OK!${NC}\n"
         else
